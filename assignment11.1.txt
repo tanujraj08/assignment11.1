@@ -1,0 +1,17 @@
+Q:What is the use of SQLite open helper class in SQLITE?
+
+Ans:It is a class found inside android.database.sqlite package.
+It is a helper class that helps in creating the database, 
+handling the operations and also the version management.
+
+Q:what is the use of OnUpgrade function in SQLiteOpenHelper class?
+
+Ans:The purpose of onUpgrade is to manage a new database structure.
+You could start you app with simple features, then you need for instance to add a new column,
+so you need to increase the version of your database from 1 to 2 and in onUpgrade give the instruction
+to add a new column, so that if the user update the app, the new column become added.
+
+Q:How to show SQLite database table information in Android application what is the best
+way to do it?
+
+Ans:We can show Database info on android application by using cursor from where we can fetch data 
